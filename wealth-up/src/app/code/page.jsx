@@ -14,7 +14,7 @@ const Code = () => {
   const refreshCode = async () => {
     try {
       // Fetch new code using Axios
-      const response = await axios.get("http://localhost:4000/api/codes");
+      const response = await axios.get("https://code-generator-server.vercel.app/api/codes");
       const newCode = response.data.code;
 
       // Set the new code to the state
@@ -30,7 +30,7 @@ const Code = () => {
   const submitCode = async () => {
     try {
       // Send a request to your API endpoint with the entered code using Axios
-      const response = await axios.post("http://localhost:4000/api/codes/use", {
+      const response = await axios.post("https://code-generator-server.vercel.app/api/codes/use", {
         code: inputCode,
       });
       const data = response.data;
