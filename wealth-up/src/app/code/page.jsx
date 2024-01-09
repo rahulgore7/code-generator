@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./codes.css";
 
-const code = () => {
+const Code = () => {
   const [inputCode, setInputCode] = useState("");
   const [generatedCode, setGeneratedCode] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -74,4 +74,4 @@ const code = () => {
   );
 };
 
-export default code;
+export default Code;

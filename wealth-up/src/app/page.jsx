@@ -1,4 +1,5 @@
-import './page.css'
+import "./page.css";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="macbook-pro">
@@ -9,9 +10,11 @@ export default function Home() {
             <div className="div">
               <div className="group-2">
                 <div className="overlap-group-wrapper">
-                  <div className="overlap-group">
-                    <div className="text-wrapper">Get Started</div>
-                  </div>
+                  <Link href="/code">
+                    <div className="overlap-group">
+                      <div className="text-wrapper">Get Started</div>
+                    </div>
+                  </Link>
                 </div>
                 <div className="text-wrapper-2">
                   Check your financial health
@@ -41,10 +44,13 @@ export default function Home() {
             </div>
             <img className="vector" alt="Vector" src="vector.svg" />
             <div className="overlap-wrapper">
-              <div className="overlap-group">
-                <div className="text-wrapper">Get Started</div>
-              </div>
+              <Link href="/code">
+                <div className="overlap-group">
+                  <div className="text-wrapper">Get Started</div>
+                </div>
+              </Link>
             </div>
+
             <div className="text-wrapper-5">How it works?</div>
             <img className="element-4" alt="Element" src="answer.svg" />
             <div className="answer-few-questions">
@@ -67,6 +73,4 @@ export default function Home() {
       </div>
     </div>
   );
-};
-
-
+}
