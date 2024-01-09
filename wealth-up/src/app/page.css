@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(180deg, rgb(10, 87, 131) 5.05%, rgb(24, 161, 154) 100%);
+  overflow-x: hidden;
 }
 
 .macbook-pro {
